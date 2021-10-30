@@ -1,0 +1,38 @@
+{
+  "name": "week03-009",
+  "version": "0.0.0",
+  "engines": {
+    "node": "14.18.1"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.8",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.14"
+  },
+  "description": "This is an initial project template for students to implement the remaining code, as per midterm test requirements.",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imtiaj35/COMP229009-F2021-MidTerm-301119638.git"
+  },
+  "author": "imtiaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imtiaj35/COMP229009-F2021-MidTerm-301119638/issues"
+  },
+  "homepage": "https://github.com/Imtiaj35/COMP229009-F2021-MidTerm-301119638#readme"
+}
