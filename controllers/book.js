@@ -64,7 +64,7 @@ module.exports.processAddPage = (req, res, next) => {
   // ADD YOUR CODE HERE
   let { id, ...body } = req.body;
   let book = new Book(body);
-  book.addBook((err, books) => {
+  book.save((err, books) => {
     if (err) {
       console.log(err);
       res.end(error);
@@ -100,7 +100,7 @@ module.exports.displayEditPage = (req, res, next) => {
 // Processes the data submitted from the Edit form to update a book
 module.exports.processEditPage = (req, res, next) => {
   let { id, ...body } = req.body;
-  Book.findByIdAndEdit(id, body, (err, books) => {
+  Book.findByIdAndUpdate(id, body, (err, books) => {
       if(err) {
         console.log(err);
         res.end(error);
@@ -116,7 +116,7 @@ module.exports.processEditPage = (req, res, next) => {
 module.exports.performDelete = (req, res, next) => {
   // ADD YOUR CODE HERE
   let id = req.params.id;
-  Book.findByIdAndDelete(id, (err, books) => {
+  Book.findByIdAndRemove(id, (err, books) => {
       if(err) {
         console.log(err);
         res.end(error);
